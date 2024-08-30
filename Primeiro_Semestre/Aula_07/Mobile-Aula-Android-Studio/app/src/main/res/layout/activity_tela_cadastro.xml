@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TelaCadastro">
+
+    <TextView
+        android:id="@+id/txt_view_cadastro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="204dp"
+        android:text="Assitencia ao Lucas"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="309dp" />
+
+    <Button
+        android:id="@+id/btn_Voltar"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:text="Voltar"
+        android:textColorLink="#2196F3"
+        app:layout_constraintBaseline_toBaselineOf="@+id/bnt_Cadastro"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bnt_Cadastro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="502dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="156dp"
+        android:layout_height="168dp"
+        app:srcCompat="@drawable/baseline_assist_walker_24"
+        tools:layout_editor_absoluteX="11dp"
+        tools:layout_editor_absoluteY="28dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
