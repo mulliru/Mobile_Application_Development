@@ -2,6 +2,7 @@ package com.murillo.calculadora
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         val segundoNumero: TextInputEditText = findViewById(R.id.editSegundoNum)
         val btnSomar: Button = findViewById(R.id.btn_somar)
         val txtResultado: TextView = findViewById(R.id.txtResultado)
+        var imgCalc: ImageView = findViewById(R.id.imgCalc)
 
         // Adicionando um listener ao botão de soma
         btnSomar.setOnClickListener {
@@ -27,5 +29,10 @@ class MainActivity : AppCompatActivity() {
             // Exibindo o resultado da soma no TextView txtResultado
             txtResultado.text = "Resultado da soma: $resultado"
         }
+
+            // Mostrando uma mensagem ao clicar na imagem
+            imgCalc.setOnClickListener {
+                txtResultado.text = "Cliquei na imagem!"
+            }
+        }
     }
-}
