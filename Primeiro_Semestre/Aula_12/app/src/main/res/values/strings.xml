@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">AulaInternalizacao</string>
+    <string name="primeiroTxt">Olá</string>
+    <string name="segundoTxt">Bem-vindo</string>
+    <string name="corTxt">Vermelho</string>
+    <string name="btnLogar">Logar</string>
+</resources>
